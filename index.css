@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+
+
+.background{
+    transform: translateZ(-40px) scale(5.1);
+}
+
+.foreground{
+    transform: translateZ(-15px) scale(2.5);
+    
+}
+
+.he{
+    font-size: 7rem;
+    color: white;
+    position: relative;
+    top: 70px;
+    /* letter-spacing: 2px; */
+}
+
+.background , .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 5rem 0;
+}
+
+
+.bg1{
+    background-image: url(night\ life.png);
+}
+
+.bg2{
+    background-image: url(planets.png);
+}
+
+.bg3{
+    background-image: url(galaxies.png);
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 5rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
